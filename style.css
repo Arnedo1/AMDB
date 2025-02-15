@@ -1,0 +1,250 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Base styles */
+body {
+    background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+    color: #333;
+    min-height: 100vh;
+}
+
+/* Header styles */
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1.125rem; /* Reduced from 1.5rem */
+    margin-bottom: 1.5rem; /* Reduced from 2rem */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    color: white;
+    text-align: center;
+    font-size: 1.875rem; /* Reduced from 2.5rem */
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.5px; /* Reduced from 2px */
+}
+
+/* Container styles */
+.container {
+    max-width: 750px; /* Reduced from 1000px */
+    margin: 0 auto;
+    padding: 0 15px; /* Reduced from 20px */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.125rem; /* Reduced from 1.5rem */
+}
+
+/* Input styles */
+.input {
+    width: 300px; /* Reduced from 400px */
+    max-width: 600px; /* Reduced from 800px */
+    padding: 11px; /* Reduced from 15px */
+    border: 1.5px solid rgba(255, 255, 255, 0.1); /* Reduced from 2px */
+    border-radius: 8px; /* Reduced from 10px */
+    font-size: 0.825rem; /* Reduced from 1.1rem */
+    background-color: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+    outline: none;
+    margin-left: 45px; /* Reduced from 60px */
+    height: 40px;
+}
+
+.input:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 8px rgba(74, 144, 226, 0.3);
+}
+
+/* Button styles */
+button {
+    padding: 9px 23px; /* Reduced from 12px 30px */
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 6px; /* Reduced from 8px */
+    cursor: pointer;
+    font-size: 0.825rem; /* Reduced from 1.1rem */
+    font-weight: 500;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 0.75px; /* Reduced from 1px */
+}
+
+button:hover {
+    background-color: #357abd;
+    box-shadow: 0 3px 9px rgba(74, 144, 226, 0.3);
+}
+
+/* Movie info container */
+.info {
+    width: 100%;
+    max-width: 600px; /* Reduced from 800px */
+    margin-top: 0.75rem; /* Reduced from 1rem */
+}
+
+/* Movie card styles */
+.movie-card {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 1.5rem; /* Reduced from 2rem */
+    border-radius: 11px; /* Reduced from 15px */
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+    margin-bottom: 50px;
+}
+
+.movie-card h2 {
+    color: #1a1a1a;
+    margin-bottom: 1.125rem; /* Reduced from 1.5rem */
+    font-size: 1.5rem; /* Reduced from 2rem */
+    font-weight: 700;
+    text-align: center;
+}
+
+.movie-card img {
+    max-width: 60%;
+    height: auto;
+    border-radius: 8px; /* Reduced from 10px */
+    margin: 0.75rem auto; /* Reduced from 1rem */
+    display: block;
+    box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
+}
+
+.movie-card p {
+    margin-bottom: 0.75rem; /* Reduced from 1rem */
+    line-height: 1.5; /* Slightly reduced from 1.6 */
+    color: #444;
+    font-size: 0.825rem; /* Reduced from 1.1rem */
+}
+
+.movie-card strong {
+    color: #1a1a1a;
+    font-weight: 600;
+}
+
+.movie {
+    cursor: pointer;
+    color: yellow;
+}
+
+.tvShow {
+    cursor: pointer;
+    width: 100px; /* Reduced from 100px */
+    margin-left: 8px; /* Reduced from 10px */
+}
+
+.containerIn {
+    display: flex;
+    margin-left: 112px; /* Reduced from 150px */
+}
+
+.toggle {
+    display: flex;
+    font-size: 14px;
+    margin-left: 23px; /* Reduced from 30px */
+    margin-top: 13px; /* Reduced from 17px */
+}
+.trailer-player {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.9);
+    z-index: 1000;
+    padding: 40px;
+}
+
+.trailer-player.active {
+    display: block;
+}
+
+.trailer-player iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 8px;
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.watch-trailer-btn {
+    background: #e50914;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem; /* Reduced from 2rem */
+    }
+
+    .container {
+        padding: 0 11px; /* Reduced from 15px */
+    }
+
+    .input {
+        max-width: 225px; /* Reduced from 300px */
+    }
+
+    .movie-card {
+        padding: 1.125rem; /* Reduced from 1.5rem */
+    }
+
+    .movie-card h2 {
+        font-size: 1.125rem; /* Reduced from 1.5rem */
+    }
+    .tvShow {
+        cursor: pointer;
+        width: 70px; /* Reduced from 100px */
+        margin-left: 0px; /* Reduced from 10px */
+        font-size: 14px;
+    }
+    .movie {
+        margin-bottom: 5px;
+        margin-top: -10px;
+        font-size: 14px;
+    }
+    .containerIn {
+        display: flex;
+        margin-left: 0px; /* Reduced from 150px */
+    }
+    .input {
+        width: 180px;
+        margin-left: 85px;
+    }
+    .toggle {
+        display: flex;
+        flex-direction: column;
+        font-size: 14px;
+        margin-left: 23px; /* Reduced from 30px */
+        margin-top: 13px; /* Reduced from 17px */
+    }
+}
