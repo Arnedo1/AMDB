@@ -16,43 +16,43 @@ body {
 /* Header styles */
 header {
     background-color: rgba(0, 0, 0, 0.8);
-    padding: 1.125rem; /* Reduced from 1.5rem */
-    margin-bottom: 1.5rem; /* Reduced from 2rem */
+    padding: 1.125rem; 
+    margin-bottom: 1.5rem; 
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 header h1 {
     color: white;
     text-align: center;
-    font-size: 1.875rem; /* Reduced from 2.5rem */
+    font-size: 1.875rem; 
     font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1.5px; /* Reduced from 2px */
+    letter-spacing: 1.5px; 
 }
 
 /* Container styles */
 .container {
-    max-width: 750px; /* Reduced from 1000px */
+    max-width: 750px;
     margin: 0 auto;
-    padding: 0 15px; /* Reduced from 20px */
+    padding: 0 15px; 
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1.125rem; /* Reduced from 1.5rem */
+    gap: 1.125rem; 
 }
 
 /* Input styles */
 .input {
-    width: 300px; /* Reduced from 400px */
-    max-width: 600px; /* Reduced from 800px */
-    padding: 11px; /* Reduced from 15px */
-    border: 1.5px solid rgba(255, 255, 255, 0.1); /* Reduced from 2px */
-    border-radius: 8px; /* Reduced from 10px */
-    font-size: 0.825rem; /* Reduced from 1.1rem */
+    width: 300px; 
+    max-width: 600px; 
+    padding: 11px; 
+    border: 1.5px solid rgba(255, 255, 255, 0.1); 
+    border-radius: 8px; 
+    font-size: 0.825rem; 
     background-color: rgba(255, 255, 255, 0.9);
     transition: all 0.3s ease;
     outline: none;
-    margin-left: 45px; /* Reduced from 60px */
+    margin-left: 45px; 
     height: 40px;
 }
 
@@ -63,17 +63,17 @@ header h1 {
 
 /* Button styles */
 button {
-    padding: 9px 23px; /* Reduced from 12px 30px */
+    padding: 9px 23px; 
     background-color: #4a90e2;
     color: white;
     border: none;
-    border-radius: 6px; /* Reduced from 8px */
+    border-radius: 6px; 
     cursor: pointer;
-    font-size: 0.825rem; /* Reduced from 1.1rem */
+    font-size: 0.825rem; 
     font-weight: 500;
     transition: all 0.3s ease;
     text-transform: uppercase;
-    letter-spacing: 0.75px; /* Reduced from 1px */
+    letter-spacing: 0.75px; 
 }
 
 button:hover {
@@ -84,15 +84,15 @@ button:hover {
 /* Movie info container */
 .info {
     width: 100%;
-    max-width: 600px; /* Reduced from 800px */
-    margin-top: 0.75rem; /* Reduced from 1rem */
+    max-width: 600px; 
+    margin-top: 0.75rem; 
 }
 
 /* Movie card styles */
 .movie-card {
     background-color: rgba(255, 255, 255, 0.95);
-    padding: 1.5rem; /* Reduced from 2rem */
-    border-radius: 11px; /* Reduced from 15px */
+    padding: 1.5rem; 
+    border-radius: 11px; 
     box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease;
     margin-bottom: 50px;
@@ -100,8 +100,8 @@ button:hover {
 
 .movie-card h2 {
     color: #1a1a1a;
-    margin-bottom: 1.125rem; /* Reduced from 1.5rem */
-    font-size: 1.5rem; /* Reduced from 2rem */
+    margin-bottom: 1.125rem; 
+    font-size: 1.5rem; 
     font-weight: 700;
     text-align: center;
 }
@@ -109,17 +109,17 @@ button:hover {
 .movie-card img {
     max-width: 60%;
     height: auto;
-    border-radius: 8px; /* Reduced from 10px */
-    margin: 0.75rem auto; /* Reduced from 1rem */
+    border-radius: 8px; 
+    margin: 0.75rem auto; 
     display: block;
     box-shadow: 0 3px 9px rgba(0, 0, 0, 0.1);
 }
 
 .movie-card p {
-    margin-bottom: 0.75rem; /* Reduced from 1rem */
-    line-height: 1.5; /* Slightly reduced from 1.6 */
+    margin-bottom: 0.75rem; 
+    line-height: 1.5; 
     color: #444;
-    font-size: 0.825rem; /* Reduced from 1.1rem */
+    font-size: 0.825rem; 
 }
 
 .movie-card strong {
@@ -134,20 +134,20 @@ button:hover {
 
 .tvShow {
     cursor: pointer;
-    width: 100px; /* Reduced from 100px */
-    margin-left: 8px; /* Reduced from 10px */
+    width: 100px;
+    margin-left: 8px; 
 }
 
 .containerIn {
     display: flex;
-    margin-left: 112px; /* Reduced from 150px */
+    margin-left: 112px; 
 }
 
 .toggle {
     display: flex;
     font-size: 14px;
-    margin-left: 23px; /* Reduced from 30px */
-    margin-top: 13px; /* Reduced from 17px */
+    margin-left: 23px; 
+    margin-top: 13px; 
 }
 .trailer-player {
     display: none;
@@ -203,28 +203,28 @@ button:hover {
 /* Responsive design */
 @media (max-width: 768px) {
     header h1 {
-        font-size: 1.5rem; /* Reduced from 2rem */
+        font-size: 1.5rem; 
     }
 
     .container {
-        padding: 0 11px; /* Reduced from 15px */
+        padding: 0 11px;
     }
 
     .input {
-        max-width: 225px; /* Reduced from 300px */
+        max-width: 225px; 
     }
 
     .movie-card {
-        padding: 1.125rem; /* Reduced from 1.5rem */
+        padding: 1.125rem; 
     }
 
     .movie-card h2 {
-        font-size: 1.125rem; /* Reduced from 1.5rem */
+        font-size: 1.125rem; 
     }
     .tvShow {
         cursor: pointer;
-        width: 70px; /* Reduced from 100px */
-        margin-left: 0px; /* Reduced from 10px */
+        width: 70px; 
+        margin-left: 0px; 
         font-size: 14px;
     }
     .movie {
@@ -234,7 +234,7 @@ button:hover {
     }
     .containerIn {
         display: flex;
-        margin-left: 0px; /* Reduced from 150px */
+        margin-left: 0px; 
     }
     .input {
         width: 180px;
@@ -244,7 +244,7 @@ button:hover {
         display: flex;
         flex-direction: column;
         font-size: 14px;
-        margin-left: 23px; /* Reduced from 30px */
-        margin-top: 13px; /* Reduced from 17px */
+        margin-left: 23px; 
+        margin-top: 13px; 
     }
 }
