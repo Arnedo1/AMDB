@@ -1,3 +1,4 @@
+// const variable with al the options for the fetch api
 const options = {
     method: 'GET',
     headers: {
@@ -86,22 +87,22 @@ input.addEventListener('keydown', e => {
             input.value = ''}}
 })
 
+// evdntlistener for the movie toggle button
 moviesToggle.addEventListener('click', () => {
     if (moviesToggle.style.color !== 'yellow') {
         moviesToggle.style.color = 'yellow';
         tvShowsToggle.style.color = 'black';
         input.placeholder = "Enter Movie title";
-        // Now it's a function, not a string
         btn.onclick = () => getMovieInfo(input.value);
     }
 });
 
+// eventlitener for the tv show button
 tvShowsToggle.addEventListener('click', () => {
     if (tvShowsToggle.style.color !== 'yellow') {
         tvShowsToggle.style.color = 'yellow';
         moviesToggle.style.color = 'black';
         input.placeholder = "Enter TV Show title";
-        // Now it's a function, not a string
         btn.onclick = () => getSerieInfo(input.value);
     }
 });
